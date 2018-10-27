@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点名</title>
+</head>
+
+<script type="text/javascript">
+    function displayNum() {
+        document.getElementById("setnum").innerHTML = Math.floor(Math.random() * (48 - 1) + 1);
+    }
+</script>
+
+<style type="text/css">
+    h1{font-size: 200px}
+    .btn-3d {
+        position: relative;
+        display: inline-block;
+        font-size: 22px;
+        padding: 20px 60px;
+        color: white;
+        margin: 20px 10px 10px;
+        border-radius: 6px;
+        text-align: center;
+        transition: top .01s linear;
+        text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    }
+
+    .btn-3d.red:hover    {background-color: #e74c3c;}
+    .btn-3d:active {
+        top: 9px;
+    }
+    .btn-3d.red {
+        background-color: #e74c3c;
+        box-shadow: 0 0 0 1px #c63702 inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 8px 0 0 #C24032,
+        0 8px 0 1px rgba(0,0,0,0.4),
+        0 8px 8px 1px rgba(0,0,0,0.5);
+    }
+    .btn-3d.red:active {
+        box-shadow: 0 0 0 1px #c63702 inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 0 0 1px rgba(0,0,0,0.4);
+    }
+
+</style>
+
+<body>
+<br></br><br></br><br></br><br></br>
+    <div  class="number" align="center">
+        <h1 id="setnum" >---</h1>
+        <a class="btn-3d red" onclick="displayNum()" onselectstart="return false;">开始点名</a >
+    </div>
+    <div >
+
+    </div>
+</body>
+</html>
